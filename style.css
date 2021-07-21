@@ -1,0 +1,52 @@
+#body{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+}
+html{
+    background-color: gray;
+    scroll-behavior: smooth;
+}
+.love-music h6{
+    padding-left: 40px;
+}
+.sad-music h6{
+    padding-left: 40px;
+}
+.romance-music h6{
+    padding-left: 40px;
+}
+.happy-music h6{
+    padding-left: 40px;
+}
+.worship-music h6{
+    padding-left: 40px;
+}
+hr{
+    color: white;
+}
+.center{
+    text-align: center;
+}
+.music{
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.music img{
+    width: 150px;
+    height: 150px;
+}
+.worship{
+    justify-content: space-between;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}

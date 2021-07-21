@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/fontawesome.css"
+        integrity="sha512-NQCKOSsUyZsvf5ItxWh1bR2vlY0cgw1Rx9tJRLJr31GT9oxCno9uwtiVmVFgN2BlHo1jmwjtH8ivIaob4YF+jw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BollyWood Binge</title>
+</head>
+
+<body>
+
+    <div id="body">
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="img/logo.jpg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-tv"></i>Catagory
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#sad-music"><i class="fa fa-frown"></i>Sad</a></li>
+                                <li><a class="dropdown-item" href="#romance-music"><i
+                                            class="fa fa-heart"></i>Romance</a></li>
+                                <li><a class="dropdown-item" href="#happy-music"><i class="fa fa-smile-o"
+                                            aria-hidden="true"></i>Happy</a></li>
+                                <li><a class="dropdown-item" href="#worship-music" <i class="fa fa-flag"
+                                        aria-hidden="true"></i>>Worship</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input id="search" class="form-control me-2" type="search" placeholder="Search Catagory"
+                            aria-label="Search" onkeyup="catagory()">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ================================================================= -->
+
+        <!-- Sliding Music -->
+
+        <div id="banner-music" class="carousel slide my-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/namo-namo.jpg" class="d-block w-100" alt="Namo Namo Ji Sankara">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/jai-jai.jpg" class="d-block w-100" alt="Jai Jai ShivaSankar">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/teri-mitti.jpg" class="d-block w-100" alt="Teri Mitti">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/khariat.jpg" class="d-block w-100" alt="khariat Pucho">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Chaar-kadaam.jpg" class="d-block w-100" alt="Chaar Kadaam">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#banner-music" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#banner-music" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- ================================================================= -->
+
+        <!-- Sad Music -->
+
+        <div id="sad-music" class="sad-music">
+            <h6>Catagory - Sad</h6>
+            <hr>
+            <div class="music">
+                <div class="khariat">
+                    <img id="img-khair" src="img/khariat.jpg" class="im" alt="khairiat" data-bs-toggle="modal" data-bs-target="#khair">
+                    <p>Khairiat</p>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="khair" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Khairiat Pucho</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/khariat.jpg" alt="khairiat" class="g">
+                                    <marquee class="center">Khariat Pucho</marquee>
+                                    <audio controls>
+                                        <source src="audio/Khariat.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Teri-mitti">
+                    <img id="img-teri" src="img/teri-mitti.jpg" class="im" alt="Teri Mitti" data-bs-toggle="modal"
+                        data-bs-target="#teri">
+                    <p>Teri Mitti</p>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="teri" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Teri Mitti</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/teri-mitti.jpg" alt="Teri Mittle" class="g">
+                                    <marquee class="center">Teri Mitti</marquee>
+                                    <audio controls>
+                                        <source src="audio/Teri.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="do-you-wanna">
+                    <img id="img-do" src="img/do-you-wanna.jpg" class="im" alt="do you wanna" data-bs-toggle="modal"
+                        data-bs-target="#wanna">
+                    <p>Do You Wanna</p>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="wanna" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Do You Wanna</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/do-you-wanna.jpg" alt="Teri Mittle" class="g">
+                                    <marquee class="center">Do You Wanna</marquee>
+                                    <audio controls>
+                                        <source src="audio/snowman.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jaane">
+                    <img id="img-jaane" src="img/jaane.jpg" class="im" alt="Jaane" data-bs-toggle="modal"
+                        data-bs-target="#jaane">
+                    <p>Jaane Nahi</p>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="jaane" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Jaane Nahi</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/jaane.jpg" alt="Teri Mittle" class="g">
+                                    <marquee class="center">Jaane Nahi</marquee>
+                                    <audio controls>
+                                        <source src="audio/jaane-nahi.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="give-me">
+                    <img id="img-sun" src="img/sunshine.jpg" class="im" alt="Jaane" data-bs-toggle="modal"
+                        data-bs-target="#sunshine">
+                    <p>Give Me Some Sun Shine</p>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="sunshine" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Give Me Some Sun Shine</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/sunshine.jpg" alt="Teri Mittle" class="g">
+                                    <marquee class="center">Give Me Some Sun Shine</marquee>
+                                    <audio controls>
+                                        <source src="audio/give-me-some.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- ================================================================= -->
+
+        <!-- Romance Music -->
+
+        <div id="romance-music" class="romance-music">
+            <h6>Catagory - Romance</h6>
+            <hr>
+            <div class="music">
+                <div class="first-time">
+                    <img id="img-first" src="img/first-time.jpg" class="im" alt="For The First Time" data-bs-toggle="modal"
+                        data-bs-target="#first-time">
+                    <p>For The First Time</p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="first-time" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">For The First Time</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/first-time.jpg" alt="Teri Mittle" class="g">
+                                    <marquee class="center">For The First time</marquee>
+                                    <audio controls>
+                                        <source src="audio/for-the-first.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zoobi-doobi">
+                    <img id="img-zoobi" src="img/zoobi.jpg" class="im" alt="Zoobi Doobi" data-bs-toggle="modal"
+                        data-bs-target="#zoobi">
+                    <p>Zoobi Doobi</p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="zoobi" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Zoobi Doobi</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/zoobi.jpg" alt="Teri Mittle" class="g">
+                                    <marquee class="center">Zoobi Doobi</marquee>
+                                    <audio controls>
+                                        <source src="audio/zoobi-doobi.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chaar-kadaam">
+                    <img id="img-char" src="img/Chaar-kadaam.jpg" class="im" alt="Chaar kadaam" data-bs-toggle="modal"
+                        data-bs-target="#char">
+                    <p>Chaar Kadaam</p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="char" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Chaar Kadaam</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/Chaar-kadaam.jpg" alt="Char kadaam" class="g">
+                                    <marquee class="center">Chaar Kadaam</marquee>
+                                    <audio controls>
+                                        <source src="audio/chaar-kadam.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+
+            <!-- ================================================================= -->
+
+            <!-- Happy Music -->
+
+            <div id="happy-music" class="happy-music">
+                <h6>Catagory - Happy</h6>
+                <hr>
+                <div class="music">
+                    <div class="Kashmir">
+                        <img id="img-kashmir" src="img/kashmir.jpg" class="im" alt="Kashmir" data-bs-toggle="modal"
+                            data-bs-target="#kash">
+                        <p>Kashmir Tu</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="kash" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Kashmir Tu</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/kashmir.jpg" alt="khairiat" class="g">
+                                        <marquee class="center">Kashmir Tu</marquee>
+                                        <audio controls>
+                                            <source src="audio/Kashmir.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="let-it-go">
+                        <img id="img-let" src="img/let-it-go.jpg" class="im" alt="Let-it-go" data-bs-toggle="modal"
+                            data-bs-target="#let">
+                        <p>Let It Go</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="let" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Let It Go</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/let-it-go.jpg" alt="Let" class="g">
+                                        <marquee class="center">Let It Go</marquee>
+                                        <audio controls>
+                                            <source src="audio/let-it-go.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="let-it-go-multi">
+                        <img id="img-let-muti" src="img/let-it-go.jpg" class="im" alt="Let-it-go-multi" data-bs-toggle="modal"
+                            data-bs-target="#let-it">
+                        <p>Let It Go MultiLanguage</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="let-it" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Let It Go MultiLanguage
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/let-it-go.jpg" alt="Let" class="g">
+                                        <marquee class="center">Let It Go MultiLanguage</marquee>
+                                        <audio controls>
+                                            <source src="audio/let-it-go-multilang.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="into-the-unknown">
+                        <img id="img-into" src="img/into-unknown.jpg" class="im" alt="Into The Unknown" data-bs-toggle="modal"
+                            data-bs-target="#into-unknown">
+                        <p>Into The Unknown</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="into-unknown" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Into The Unknown</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/into-unknown.jpg" alt="Let" class="g">
+                                        <marquee class="center">Into The Unknown</marquee>
+                                        <audio controls>
+                                            <source src="audio/into-the-unknown.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aal-izz-well">
+                        <img id="img-aal" src="img/aal.jpg" class="im" alt="Aal Izz well" data-bs-toggle="modal"
+                            data-bs-target="#aal">
+                        <p>Aal Izz Well</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="aal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Aal Izz Well</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/aal.jpg" alt="aal" class="g">
+                                        <marquee class="center">Into The Unknown</marquee>
+                                        <audio controls>
+                                            <source src="audio/aal-izz-well.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <!-- ================================================================= -->
+
+            <!-- Worship Music -->
+
+            <div id="worship-music" class="worship-music">
+                <h6>Catagory - Worship</h6>
+                <hr>
+                <div class="music">
+                    <div class="namo">
+                        <img id="img-namo" src="img/namo-namo.jpg" class="im" alt="NamoNamo" data-bs-toggle="modal"
+                            data-bs-target="#namo">
+                        <p>Namo Namo Ji Shankara</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="namo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Namo Namo Ji Shankara</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/namo-namo.jpg" alt="jai" class="g">
+                                        <marquee class="center">Namo Namo Ji Shankara</marquee>
+                                        <audio controls>
+                                            <source src="audio/namo.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jai">
+                        <img id="img-jai" src="img/jai-jai.jpg" class="im" alt="jai jai" data-bs-toggle="modal"
+                            data-bs-target="#jaijai">
+                        <p>Jai Jai Shiva Sankar</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="jaijai" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Jai Jai Shiva Shankar</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/jai-jai.jpg" alt="jai" class="g">
+                                        <marquee class="center">Jai Jai ShivaShankar</marquee>
+                                        <audio controls>
+                                            <source src="audio/Jai-jai.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aigiri">
+                        <img id="img-aigiri" src="img/aigiri.jpg" class="im" alt="aigiri" data-bs-toggle="modal"
+                            data-bs-target="#aigiri">
+                        <p>Aigiri Nandini</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="aigiri" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Aigiri Nandini</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/aigiri.jpg" alt="aigiri" class="g">
+                                        <marquee class="center">Aigiri Nandini</marquee>
+                                        <audio controls>
+                                            <source src="audio/aigiri.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <!-- ================================================================= -->
+
+                <!-- Footer -->
+
+                <footer>
+                    <b>&copy; CopyRight - Technical Earth 2021</b>
+                </footer>
+
+                <!-- ================================================================= -->
+
+            </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+
+    function catagory() {
+        let filter = document.getElementById('search').value.toUpperCase();
+
+        if (filter == "AIGIRI") {
+            let aigiri = document.getElementById('img-aigiri');
+            aigiri.click();
+        }
+        else if (filter == "JAI JAI") {
+            let jai = document.getElementById('img-jai');
+            jai.click();
+        }
+        else if (filter == "NAMO") {
+            let namo = document.getElementById('img-namo');
+            namo.click();
+        }
+        else if (filter == "AAL IZZ") {
+            let aal = document.getElementById('img-aal');
+            aal.click();
+        }
+        else if (filter == "INTO THE") {
+            let into = document.getElementById('img-into');
+            into.click();
+        }
+        else if (filter == "LET IT MU") {
+            let letmu = document.getElementById('img-let-multi');
+            letmu.click();
+        }
+        else if (filter == "LET IT GO") {
+            let letit = document.getElementById('img-let');
+            letit.click();
+        }
+        else if (filter == "KASHMIR") {
+            let kas = document.getElementById('img-kashmir');
+            kas.click();
+        }
+        else if (filter == "CHAAR") {
+            let char = document.getElementById('img-char');
+            char.click();
+        }
+        else if (filter == "ZOOBI") {
+            let zoobi = document.getElementById('img-zoobi');
+            zoobi.click();
+        }
+        else if (filter == "FOR THE") {
+            let first = document.getElementById('img-first');
+            first.click();
+        }
+        else if (filter == "SUN") {
+            let sun = document.getElementById('img-sun');
+            sun.click();
+        }
+        else if (filter == "JAANE") {
+            let jaane = document.getElementById('img-jaane');
+            jaane.click();
+        }
+        else if (filter == "DO YOU") {
+            let doyou = document.getElementById('img-do');
+            doyou.click();
+        }
+        else if (filter == "TERI") {
+            let teri = document.getElementById('img-teri');
+            teri.click();
+        }
+        else if (filter == "KHAIR") {
+            let khair = document.getElementById('img-khair');
+            khair.click();
+        }
+    }
+
+</script>
+
+</html>
