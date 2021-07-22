@@ -50,3 +50,9 @@ footer{
     background-color: black;
     color: white;
 }
+.sad-music, .romance-music, .worksip-music, .happy-music{
+    overflow-x: scroll; 
+    overflow-y:hidden; 
+    height:100px; 
+    width: 300px;
+}
