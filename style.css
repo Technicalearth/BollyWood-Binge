@@ -1,6 +1,6 @@
 #body{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: gray;
 }
 html{
@@ -52,7 +52,5 @@ footer{
 }
 .sad-music, .romance-music, .worksip-music, .happy-music{
     overflow-x: scroll; 
-    overflow-y:hidden; 
-    height:100px; 
-    width: 300px;
+    overflow-y: hidden;
 }
