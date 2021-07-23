@@ -51,7 +51,7 @@ footer{
     color: white;
 }
 .music{
-    overflow-x: scroll; 
+    overflow-x: hidden; 
     overflow-y: hidden;
     overflow: hidden;
     width: 100vw; 
