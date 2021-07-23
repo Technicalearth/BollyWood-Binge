@@ -498,7 +498,7 @@
                                     </div>
                                     <div class="modal-body center">
                                         <img src="img/aal.jpg" alt="aal" class="g">
-                                        <marquee class="center">Into The Unknown</marquee>
+                                        <marquee class="center">Aal Izz Well</marquee>
                                         <audio controls>
                                             <source src="audio/aal-izz-well.mp3">
                                         </audio>
@@ -511,8 +511,66 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
+                    <div class="faana-ho">
+                        <img id="img-faana" src="img/let-it-go.jpg" class="im" alt="Let it go" data-bs-toggle="modal"
+                            data-bs-target="#faana">
+                        <p>Faana Ho</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="faana" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Faana Ho</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/let-it-go.jpg" alt="aal" class="g">
+                                        <marquee class="center">Faana Ho</marquee>
+                                        <audio controls>
+                                            <source src="audio/Faana-ho.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Anjaan Jahaan">
+                        <img id="img-anjaan" src="img/into-unknown.jpg" class="im" alt="Into The unknown" data-bs-toggle="modal"
+                            data-bs-target="#an">
+                        <p>Faana Ho</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="an" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Anjaan Jahaan</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/let-it-go.jpg" alt="aal" class="g">
+                                        <marquee class="center">Anjaan Jahaan</marquee>
+                                        <audio controls>
+                                            <source src="audio/Anjaan-Jahaan.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <hr>
             </div>
@@ -703,6 +761,14 @@
         else if (filter == "KHAIR") {
             let khair = document.getElementById('img-khair');
             khair.click();
+        }
+        else if (filter == "AN") {
+            let an = document.getElementById('img-anjaan');
+            an.click();
+        }
+        else if (filter == "FAAN") {
+            let faana = document.getElementById('img-faana');
+            faana.click();
         }
     }
 
