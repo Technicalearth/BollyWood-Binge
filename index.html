@@ -672,6 +672,64 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="dugga">
+                        <img id="img-dugga" src="img/durga.jpg" class="im" alt="Dugga elo" data-bs-toggle="modal"
+                            data-bs-target="#dugga">
+                        <p>Bolo Bolo Dugga Elo</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="dugga" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Bolo Bolo Dugga Elo</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/durga.jpg" alt="aigiri" class="g">
+                                        <marquee class="center">Bolo Bolo Dugga Elo</marquee>
+                                        <audio controls>
+                                            <source src="audio/dugga-elo.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dhak">
+                        <img id="img-dhak" src="img/durga.jpg" class="im" alt="Dhak baja" data-bs-toggle="modal"
+                            data-bs-target="#dhak">
+                        <p>Dhak Baja Kasor Baja</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="dhak" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Dhak Baja Kasor Baja</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/durga.jpg" alt="Dhak Baja" class="g">
+                                        <marquee class="center">Dhak Baja Kasor Baja</marquee>
+                                        <audio controls>
+                                            <source src="audio/dhak-baja.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <hr>
                 </div>
@@ -769,6 +827,14 @@
         else if (filter == "FAAN") {
             let faana = document.getElementById('img-faana');
             faana.click();
+        }
+        else if (filter == "DHAK") {
+            let dhak = document.getElementById('img-dhak');
+            dhak.click();
+        }
+        else if (filter == "DUGGA") {
+            let dugga = document.getElementById('img-dugga');
+            dugga.click();
         }
     }
 
