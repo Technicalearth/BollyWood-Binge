@@ -55,3 +55,7 @@ footer{
     overflow-y: hidden;
     width: 100vw; 
 }
+.dhak-baja{
+    position: absolute;
+    left: 300px;
+}
