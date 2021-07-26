@@ -393,6 +393,36 @@
                             </div>
                         </div>
                     </div>
+                    <div class="ae">
+                        <img id="img-ae" src="img/ae-watan.jpg" class="im" alt="ae watan" data-bs-toggle="modal"
+                            data-bs-target="#ae">
+                        <p>Kashmir Tu</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="ae" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Ae Watan</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/ae-watan.jpg" alt="Ae Watan" class="g">
+                                        <marquee class="center">Ae Watan</marquee>
+                                        <audio controls>
+                                            <source src="audio/ae-watan.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="let-it-go">
                         <img id="img-let" src="img/let-it-go.jpg" class="im" alt="Let-it-go" data-bs-toggle="modal"
                             data-bs-target="#let">
@@ -705,7 +735,7 @@
                                     </div>
                                     <div class="modal-body center">
                                         <img src="img/durga.jpg" alt="aal" class="g">
-                                        <marquee class="center">Durga Elo</marquee>
+                                        <marquee class="center">Dugga Elo</marquee>
                                         <audio controls>
                                             <source src="audio/dugga-elo.mp3">
                                         </audio>
@@ -853,6 +883,10 @@
         else if (filter == "DUGGA") {
             let dugga = document.getElementById('img-dugga');
             dugga.click();
+        }
+        else if (filter == "AE") {
+            let ae = document.getElementById('img-ae');
+            ae.click();
         }
     }
 
