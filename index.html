@@ -892,19 +892,18 @@
             ae.click();
         }
         
-        $('#togglebtn').click({
+        $('#togglebtn').click(function() {
             let a = document.getElementById('html');
             let b = document.getElementById('body');
-            let c = document.getElementById('html');
         
-            if(c.style.background == "black" && b.style.background == "black"){
-                c.style.background = "white";
+            if(a.style.background == "black" && b.style.background == "black"){
+                a.style.background = "white";
                 b.style.background = "white";
                 $('#toggleicon').removeClass('fa-sun-o');
                 $('#toggleicon').addClass('fa-moon-o');
             }
             else{
-                c.style.background = "black";
+                a.style.background = "black";
                 b.style.background = "black";
                 $('#toggleicon').removeClass('fa-moon-o');
                 $('#toggleicon').addClass('fa-sun-o');
