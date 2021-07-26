@@ -37,7 +37,7 @@
                             <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="togglebtn" aria-current="page" href="#" onclick="toggle()"><i id="toggleicon" class="fa fa-sun-o"></i>Toggle Theme</a>
+                            <a class="nav-link" id="togglebtn" aria-current="page" href="#" onclick="toggle()"><i id="toggleicon" class="fa fa-sun-o"></i>Toggle Theme</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -892,25 +892,20 @@
             ae.click();
         }
         
-        function toggle() {
-            let html = document.getElementsByTagName('html');
-            let body = document.getElementById('body');
-            let togglebtn = document.getElementById('togglebtn');
-            let toggleicon = document.getElementById('toggleicon');
-            
+        function toggle() {            
             if(html.style.background == 'black' && body.style.background == 'black'){
-                html.style.background = 'white';
-                body.style.background = 'white';
-                body.style.color = 'black';
-                $(toggleicon).removeClass('fa-sun-o');
-                $(toggleicon).addClass('fa-moon-o');
+                $('html').css('background', 'white');
+                $('#body').css('background', 'white');
+                $('body').css('color', 'black');
+                $('toggleicon').removeClass('fa-sun-o');
+                $('toggleicon').addClass('fa-moon-o');
             }
             else{
-                html.style.background = 'black';
-                body.style.background = 'black';
-                body.style.color = 'white';
-                $(toggleicon).removeClass('fa-moon-o');
-                $(toggleicon).addClass('fa-sun-o');
+                $('html').css('background', 'black');
+                $('#body').css('background', 'black';
+                $('#body').css('color', 'white');
+                $('toggleicon').removeClass('fa-moon-o');
+                $('toggleicon').addClass('fa-sun-o');
             }
         }
     }
