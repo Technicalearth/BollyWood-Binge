@@ -162,7 +162,7 @@
                     </div>
                 </div>
                 <div class="Teri-mitti-female">
-                    <img id="img-teri-female" src="img/teri-mitti.jpg" class="im" alt="Teri Mitti" data-bs-toggle="modal"
+                    <img id="img-teri-female" src="img/teri-mitti-female.jpg" class="im" alt="Teri Mitti" data-bs-toggle="modal"
                         data-bs-target="#teri-fe">
                     <p>Teri Mitti (Female)</p>
 
@@ -177,7 +177,7 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body center">
-                                    <img src="img/teri-mitti.jpg" alt="Teri Mittle" class="g">
+                                    <img src="img/teri-mitti-female.jpg" alt="Teri Mittle" class="g">
                                     <marquee class="center">Teri Mitti (Female)</marquee>
                                     <audio controls>
                                         <source src="audio/Teri-mitti-female.mp3">
@@ -878,7 +878,7 @@
             let first = document.getElementById('img-first');
             first.click();
         }
-        else if (filter == "SUN") {
+        else if (filter == "GIVE ME") {
             let sun = document.getElementById('img-sun');
             sun.click();
         }
@@ -917,6 +917,10 @@
         else if (filter == "AE") {
             let ae = document.getElementById('img-ae');
             ae.click();
+        }
+        else if (filter == "TERI MITTI") {
+            let fe = document.getElementById('img-teri-female');
+            fe.click();
         }
     }
 
