@@ -1,11 +1,11 @@
 #body{
     height: 100vh;
     width: 100vw;
-    background-color: black;
-    color: white;
+    background-color: gray;
+    color: black;
 }
 html{
-    background-color: black;
+    background-color: gray;
     scroll-behavior: smooth;
 }
 .love-music h6{
