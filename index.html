@@ -634,6 +634,36 @@
                             </div>
                         </div>
                     </div>
+                    <div class="ghar">
+                        <img id="img-ghar" src="img/ghar-more.jpg" class="im" alt="Let it go" data-bs-toggle="modal"
+                            data-bs-target="#ghar">
+                        <p>Ghar More Pardesiya</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="ghar" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Ghar More Pardesiya</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/let-it-go.jpg" alt="aal" class="g">
+                                        <marquee class="center">Ghar More Pardesiya</marquee>
+                                        <audio controls>
+                                            <source src="audio/ghar-more.mp3">
+                                        </audio>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="Anjaan Jahaan">
                         <img id="img-anjaan" src="img/into-unknown.jpg" class="im" alt="Into The unknown" data-bs-toggle="modal"
                             data-bs-target="#an">
@@ -955,6 +985,10 @@
         else if (filter == "AGAR") {
             let agar = document.getElementById('img-agar');
             agar.click();
+        }
+        else if (filter == "GHAR") {
+            let ghar = document.getElementById('img-ghar');
+            ghar.click();
         }
     }
 
