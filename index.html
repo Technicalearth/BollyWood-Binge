@@ -191,6 +191,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="Agar-tum">
+                    <img id="img-agar" src="img/agar-tum.jpg" class="im" alt="Agar Tum" data-bs-toggle="modal"
+                        data-bs-target="#agar">
+                    <p>Agar Tum Shaat Ho</p>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="agar" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Agar Tum Shaat Ho</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/teri-mitti-female.jpg" alt="Teri Mittle" class="g">
+                                    <marquee class="center">Agar Tum Shaat Ho</marquee>
+                                    <audio controls>
+                                        <source src="audio/agar-tum.mp3">
+                                    </audio>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="do-you-wanna">
                     <img id="img-do" src="img/do-you-wanna.jpg" class="im" alt="do you wanna" data-bs-toggle="modal"
                         data-bs-target="#wanna">
@@ -921,6 +951,10 @@
         else if (filter == "TERI MITTI") {
             let fe = document.getElementById('img-teri-female');
             fe.click();
+        }
+        else if (filter == "AGAR") {
+            let agar = document.getElementById('img-agar');
+            agar.click();
         }
     }
 
