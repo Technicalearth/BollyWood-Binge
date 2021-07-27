@@ -36,9 +36,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i>Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="togglebtn" aria-current="page" href="#"><i id="toggleicon" class="fa fa-sun-o"></i>Toggle Theme</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -891,24 +888,6 @@
             let ae = document.getElementById('img-ae');
             ae.click();
         }
-        
-        $('#togglebtn').click(function() {
-            let a = document.getElementById('html');
-            let b = document.getElementById('body');
-        
-            if(a.style.background == "black" && b.style.background == "black"){
-                a.style.background = "white";
-                b.style.background = "white";
-                $('#toggleicon').removeClass('fa-sun-o');
-                $('#toggleicon').addClass('fa-moon-o');
-            }
-            else{
-                a.style.background = "black";
-                b.style.background = "black";
-                $('#toggleicon').removeClass('fa-moon-o');
-                $('#toggleicon').addClass('fa-sun-o');
-            }
-        })
     }
 
 </script>
