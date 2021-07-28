@@ -56,12 +56,12 @@ footer{
     overflow-y: hidden;
     width: 100vw; 
 }
-footer .technical{
+.technical{
     transition: 1s;
     text-decoration: none;
     color: white;
 }
-footer .technical:hover{
+.technical:hover{
     color: blue;
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
