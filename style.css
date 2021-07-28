@@ -70,3 +70,6 @@ footer p:hover{
     text-decoration: none;
     color: white;
 }
+footer{
+    display: flex;
+}
