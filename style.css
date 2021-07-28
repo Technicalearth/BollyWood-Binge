@@ -66,3 +66,7 @@ footer p:hover{
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
 }
+.technical{
+    text-decoration: none;
+    color: white;
+}
