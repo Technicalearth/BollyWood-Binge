@@ -63,5 +63,6 @@ footer{
 }
 .technical:hover{
     color: blue;
-    translate: translateY(20px);
+    -ms-transform: translate(0px, -20px);
+    transform: translate(0px, -20px);
 }
