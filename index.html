@@ -233,6 +233,39 @@
                         </div>
                     </div>
                 </div>
+                <div class="allah-waariyaan">
+                    <img id="img-allah" src="img/allah-waariyan.jpg" class="im" alt="Agar Tum" data-bs-toggle="modal"
+                        data-bs-target="#allah">
+                    <p>Allah Waariyaan</p>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="allah" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title center" id="exampleModalLabel">Agar Tum Shaat Ho</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body center">
+                                    <img src="img/allah-waariyan.jpg" alt="Teri Mittle" class="g">
+                                    <marquee class="center">Allah Waariyaan</marquee>
+                                    <audio controls>
+                                        <source src="audio/allah-waariyan.mp3">
+                                    </audio>
+                                    <h3>Song Details</h3>
+                                    <p>Singer: Arijit Singh and Alka Yagnik</p>
+                                    <p>Binge By: T-Series</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="do-you-wanna">
                     <img id="img-do" src="img/do-you-wanna.jpg" class="im" alt="do you wanna" data-bs-toggle="modal"
                         data-bs-target="#wanna">
@@ -1098,8 +1131,8 @@
             abhi.click();
         }
         else if (filter == "ALL") {
-            let all = document.getElementById('img-waariyaan');
-            waariyaan.click();
+            let all = document.getElementById('img-allah');
+            all.click();
         }
     }
 
