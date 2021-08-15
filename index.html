@@ -43,14 +43,11 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#sad-music"><i class="fa fa-frown"></i>Sad</a></li>
-                                <li><a class="dropdown-item" href="#romance-music"><i
-                                            class="fa fa-heart"></i>Romance</a></li>
-                                <li><a class="dropdown-item" href="#happy-music"><i class="fa fa-smile-o"
-                                            aria-hidden="true"></i>Happy</a></li>
-                                <li><a class="dropdown-item" href="#worship-music"><i class="fa fa-flag"
-                                        aria-hidden="true"></i>Worship</a></li>
-                                <li><a class="dropdown-item" href="#durga-music"><i class="fa fa-flag"
-                                        aria-hidden="true"></i>Durga</a></li>
+                                <li><a class="dropdown-item" href="#romance-music"><i class="fa fa-heart"></i>Romance</a></li>
+                                <li><a class="dropdown-item" href="#happy-music"><i class="fa fa-smile-o" aria-hidden="true"></i>Happy</a></li>
+                                <li><a class="dropdown-item" href="#happy-music"><i class="fa fa-question" aria-hidden="true"></i>Special</a></li>
+                                <li><a class="dropdown-item" href="#worship-music"><i class="fa fa-flag" aria-hidden="true"></i>Worship</a></li>
+                                <li><a class="dropdown-item" href="#durga-music"><i class="fa fa-flag" aria-hidden="true"></i>Durga</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -853,6 +850,52 @@
             </div>
 
             <!-- ================================================================= -->
+            
+            <!-- Special -->
+            
+            <div id="special-music" class="special-music">
+                <hr>
+                <h6>Catagory - Special</h6>
+                <hr>
+                <div class="music">
+                    <div class="vande">
+                        <img id="img-vande" src="img/vande-maataram.jpg" class="im" alt="NamoNamo" data-bs-toggle="modal"
+                            data-bs-target="#vande">
+                        <p>Vaande Maataram</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="vande" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Vaande Maataram</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/vande-maataram.jpg" alt="jai" class="g">
+                                        <marquee class="center">Vaande Maataram</marquee>
+                                        <audio controls>
+                                            <source src="audio/vande-maataram.mp3">
+                                        </audio>
+                                        <h3>Song Details</h3>
+                                        <p>Singer: Daler Mehndi, Tanishka Sanghvi, Divya Kumar and Badshah</p>
+                                        <p>Binge By: Zee Music Company</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
+            <!-- -->
 
             <!-- Worship Music -->
             
@@ -1169,6 +1212,10 @@
         else if (filter == "BADRI") {
             let bad = document.getElementById('img-badri');
             bad.click();
+        }
+        else if (filter == "VAANDE") {
+            let vande = document.getElementById('img-vande');
+            vande.click();
         }
     }
 
