@@ -1124,6 +1124,39 @@
                             </div>
                         </div>
                     </div>
+                    <div class="bajlo">
+                        <img id="img-bajlo" src="img/durga.jpg" class="im" alt="Into The unknown" data-bs-toggle="modal"
+                            data-bs-target="#bajlo">
+                        <p>Bajlo Tomar Alor Benu</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="bajlo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Dugga Elo</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/durga.jpg" alt="aal" class="g">
+                                        <marquee class="center">Bajlo Tomar Alor Benu</marquee>
+                                        <audio controls>
+                                            <source src="audio/bajlo-tomar.mp3">
+                                        </audio>
+                                        <h3>Song Details</h3>
+                                        <p>Singer: Shreya Ghoshal</p>
+                                        <p>Binge By: Agomoni Bangla</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="dhak-baja">
                         <img id="img-dhak" src="img/durga.jpg" class="im" alt="Into The unknown" data-bs-toggle="modal"
                             data-bs-target="#dhak">
@@ -1296,6 +1329,14 @@
         else if (filter == "MANIKE") {
             let manike = document.getElementById('img-manike');
             manike.click();
+        }
+        else if (filter == "JATA") {
+            let jatajutta = document.getElementById('img-jatajutta');
+            jatajutta.click();
+        }
+        else if (filter == "BAJLO") {
+            let bajlo = document.getElementById('img-bajlo');
+            bajlo.click();
         }
     }
 
