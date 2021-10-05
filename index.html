@@ -1157,6 +1157,39 @@
                             </div>
                         </div>
                     </div>
+                    <div class="aaji">
+                        <img id="img-aaji" src="img/durga.jpg" class="im" alt="Into The unknown" data-bs-toggle="modal"
+                            data-bs-target="#aaji">
+                        <p>Aaji Bangladesher hridoy hote</p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="aaji" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title center" id="exampleModalLabel">Dugga Elo</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body center">
+                                        <img src="img/durga.jpg" alt="aal" class="g">
+                                        <marquee class="center">Aaji Bangladesher hridoy hote</marquee>
+                                        <audio controls>
+                                            <source src="audio/aaji-bangalidesher.mp3">
+                                        </audio>
+                                        <h3>Song Details</h3>
+                                        <p>Singer: Srikanta Acharya And Lopamudra Mitra</p>
+                                        <p>Binge By: Red FM India</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="dhak-baja">
                         <img id="img-dhak" src="img/durga.jpg" class="im" alt="Into The unknown" data-bs-toggle="modal"
                             data-bs-target="#dhak">
@@ -1337,6 +1370,10 @@
         else if (filter == "BAJLO") {
             let bajlo = document.getElementById('img-bajlo');
             bajlo.click();
+        }
+        else if (filter == "AAJI") {
+            let aaji = document.getElementById('img-aaji');
+            aaji.click();
         }
     }
 
